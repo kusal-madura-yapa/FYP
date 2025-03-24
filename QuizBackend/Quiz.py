@@ -70,7 +70,6 @@ def start_quiz():
 
     return jsonify({"message": "Quiz started!", "quiz_id": quiz_id, "knowledge_level": 0.5})
 
-# Get next question
 @app.route("/api/next_question", methods=["GET"])
 def next_question():
     if "quiz_id" not in session:
@@ -86,9 +85,16 @@ def next_question():
     if available_questions.empty:
         return jsonify({"message": "No more available questions!"}), 200
 
-    target_difficulty = session["knowledge_level"] * 3
-    available_questions["diff_delta"] = (available_questions["Difficulty"] - target_difficulty).abs()
-    selected_question = available_questions.sort_values("diff_delta").iloc[0]
+    # --- First Question: pick fully random ---
+    if len(questions_asked) == 0:
+        selected_question = available_questions.sample(1).iloc[0]
+    else:
+        # Subsequent questions: match based on knowledge level
+        target_difficulty = session["knowledge_level"] * 3
+        available_questions["diff_delta"] = (available_questions["Difficulty"] - target_difficulty).abs()
+        top_n = available_questions.sort_values("diff_delta").head(5)
+        selected_question = top_n.sample(1).iloc[0]
+
     session["questions_asked"].append(int(selected_question.name))
 
     correct_answer = selected_question["Correct Answer"]
@@ -104,6 +110,7 @@ def next_question():
         "options": options,
         "correct_answer": correct_answer
     })
+
 
 @app.route("/api/submit_answer", methods=["POST"])
 def submit_answer():
