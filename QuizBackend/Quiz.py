@@ -41,7 +41,6 @@ def get_db_connection():
     )
 
 # Start quiz
-# Start quiz
 @app.route("/api/start_quiz", methods=["POST"])
 def start_quiz():
     data = request.get_json()
@@ -238,6 +237,38 @@ def previous_records():
     conn.close()
     return jsonify({"history": records})
 
+
+@app.route("/api/weak_areas", methods=["GET"])
+def weak_areas():
+    user_id = request.args.get("userid")
+    if not user_id:
+        return jsonify({"error": "User ID is required"}), 400
+
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM Quiz WHERE user_id = %s ORDER BY quiz_id DESC", (user_id,))
+    quizzes = cursor.fetchall()
+
+    weak_areas_records = []
+    for quiz in quizzes:
+        weak_areas = json.loads(quiz["weakareas"]) if quiz["weakareas"] else {}
+
+        weak_areas_records.append({
+            "quiz_id": quiz["quiz_id"],
+            "weak_areas": weak_areas
+        })
+
+    conn.close()
+    return jsonify({"history": weak_areas_records})
+
+@app.route("/api/users", methods=["GET"])
+def get_users():
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM users")
+    users = cursor.fetchall()
+    conn.close()
+    return jsonify(users)
 
 
 if __name__ == "__main__":

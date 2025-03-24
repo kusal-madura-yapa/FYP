@@ -24,17 +24,26 @@ def get_db_connection():
         database=os.getenv('DB_NAME')
     )
 
+
+
 # Endpoint to retrieve quiz questions with fake answers
 @app.route("/api/get_quiz_questions", methods=["GET"])
 def get_quiz_questions():
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # Query to get the top 10 questions based on the highest attempt count
+    # Query to get the top 10 questions with is_correct == 0 and the highest attempt_id for each question
     cursor.execute("""
-        SELECT description, correct_answer, COUNT(*) AS attempt_count 
+        SELECT description, correct_answer, attempt_id, COUNT(*) AS attempt_count 
         FROM Question 
-        GROUP BY description, correct_answer 
+        WHERE is_correct = 0
+        GROUP BY description, correct_answer, attempt_id
+        HAVING attempt_id = (
+            SELECT MAX(attempt_id) 
+            FROM Question q2 
+            WHERE q2.description = Question.description 
+            AND q2.correct_answer = Question.correct_answer
+        )
         ORDER BY attempt_count DESC
         LIMIT 10;
     """)
