@@ -51,7 +51,6 @@ def start_quiz():
 
     conn = get_db_connection()
     cursor = conn.cursor()
-    # Set attempt_id to 1 when starting the quiz
     cursor.execute("INSERT INTO Quiz (user_id, knowledge_level, score, weakareas, attempt_id) VALUES (%s, %s, %s, %s, %s)",
                    (user_id, 0.5, 0, json.dumps({}), 1))
     quiz_id = cursor.lastrowid
@@ -65,11 +64,12 @@ def start_quiz():
         "questions_asked": [],
         "score": 0,
         "weak_areas": {},
-        "attempt_id": 1  # All questions under this quiz will have attempt_id = 1
+        "attempt_id": 1
     })
 
     return jsonify({"message": "Quiz started!", "quiz_id": quiz_id, "knowledge_level": 0.5})
 
+# Next question
 @app.route("/api/next_question", methods=["GET"])
 def next_question():
     if "quiz_id" not in session:
@@ -80,20 +80,19 @@ def next_question():
     if len(questions_asked) >= MIN_QUESTIONS:
         return jsonify({"message": "Quiz completed!", "results": save_quiz_results()}), 200
 
-    available_questions = dataset[~dataset.index.isin(questions_asked)]
+    available_questions = dataset[~dataset.index.isin(questions_asked)].copy()
 
     if available_questions.empty:
         return jsonify({"message": "No more available questions!"}), 200
 
-    # --- First Question: pick fully random ---
     if len(questions_asked) == 0:
         selected_question = available_questions.sample(1).iloc[0]
     else:
-        # Subsequent questions: match based on knowledge level
         target_difficulty = session["knowledge_level"] * 3
         available_questions["diff_delta"] = (available_questions["Difficulty"] - target_difficulty).abs()
         top_n = available_questions.sort_values("diff_delta").head(5)
         selected_question = top_n.sample(1).iloc[0]
+
 
     session["questions_asked"].append(int(selected_question.name))
 
@@ -111,41 +110,38 @@ def next_question():
         "correct_answer": correct_answer
     })
 
-
+# Submit answer
 @app.route("/api/submit_answer", methods=["POST"])
 def submit_answer():
     data = request.json
     user_answer = data.get("answer")
-    
+
     if "questions_asked" not in session or not session["questions_asked"]:
         return jsonify({"error": "No active question found!"}), 400
-    
+
     last_question_index = session["questions_asked"][-1]
     question_data = dataset.iloc[last_question_index]
     correct_answer = question_data["Correct Answer"]
     is_correct = user_answer == correct_answer
     difficulty = int(question_data["Difficulty"])
-
-    # Use the same attempt_id for all questions (i.e., attempt_id = 1)
-    attempt_id = session["attempt_id"]  # Already set to 1
+    attempt_id = session["attempt_id"]
+    weak_area = question_data.get("Category", "Unknown")
 
     conn = get_db_connection()
     cursor = conn.cursor()
-    # Insert submission with attempt_id = 1 for all questions under this quiz
-    cursor.execute("INSERT INTO Question (quiz_id, attempt_id, description, is_correct, correct_answer) VALUES (%s, %s, %s, %s, %s)",
-                   (session["quiz_id"], attempt_id, question_data["Question"], is_correct, correct_answer))
+    cursor.execute(
+        "INSERT INTO Question (quiz_id, attempt_id, description, is_correct, correct_answer, weakarea) VALUES (%s, %s, %s, %s, %s, %s)",
+        (session["quiz_id"], attempt_id, question_data["Question"], is_correct, correct_answer, weak_area)
+    )
 
-    # Adjust score and knowledge level
     if is_correct:
         session["score"] += difficulty
         session["knowledge_level"] = min(1.0, session["knowledge_level"] + 0.1)
     else:
         session["score"] -= difficulty * 0.5
         session["knowledge_level"] = max(0.0, session["knowledge_level"] - 0.1)
-        weak_area = question_data.get("Category", "Unknown")
         session["weak_areas"][weak_area] = session["weak_areas"].get(weak_area, 0) + 1
 
-    # Update quiz score and knowledge level in DB immediately
     cursor.execute("UPDATE Quiz SET score = %s, knowledge_level = %s WHERE quiz_id = %s",
                    (session["score"], session["knowledge_level"], session["quiz_id"]))
     conn.commit()
@@ -189,7 +185,7 @@ def quiz_results():
 # Reset quiz data
 @app.route("/api/reset_data", methods=["POST"])
 def reset_data():
-    global model  
+    global model
 
     model_path = "QuizBackend/data/quiz_model.zip"
     model = DQN.load(model_path) if os.path.exists(model_path) else None
@@ -233,6 +229,7 @@ def previous_records():
 
         records.append({
             "quiz_id": quiz["quiz_id"],
+            "attempt_id": quiz["attempt_id"],  # Add this line
             "total_questions": len(questions),
             "final_score": quiz["score"],
             "final_knowledge_level": quiz["knowledge_level"],
@@ -241,10 +238,11 @@ def previous_records():
             "incorrect_answers": incorrect_answers
         })
 
+
     conn.close()
     return jsonify({"history": records})
 
-
+# Get weak areas
 @app.route("/api/weak_areas", methods=["GET"])
 def weak_areas():
     user_id = request.args.get("userid")
@@ -268,6 +266,7 @@ def weak_areas():
     conn.close()
     return jsonify({"history": weak_areas_records})
 
+# Get users
 @app.route("/api/users", methods=["GET"])
 def get_users():
     conn = get_db_connection()
@@ -276,7 +275,6 @@ def get_users():
     users = cursor.fetchall()
     conn.close()
     return jsonify(users)
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5001, debug=True)
