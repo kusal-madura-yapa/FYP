@@ -367,20 +367,13 @@ def submit_quiz():
         if not question_desc or not user_answer:
             continue
 
-        # Get the latest version of this question from DB
-        cursor.execute("""
-            SELECT correct_answer, weakarea 
-            FROM Question 
-            WHERE description = %s 
-            ORDER BY attempt_id DESC 
-            LIMIT 1
-        """, (question_desc,))
-        result = cursor.fetchone()
+        # ✅ Use dataset as ground truth instead of Question table
+        row = dataset[dataset["Question"] == question_desc]
+        if row.empty:
+            continue  # skip if question not found
 
-        if not result:
-            continue
-
-        correct_answer, weakarea = result
+        correct_answer = row.iloc[0]["Correct Answer"]
+        weakarea = row.iloc[0].get("Category", "Unknown")
         is_correct = int(correct_answer == user_answer)
 
         if not is_correct:
@@ -388,7 +381,7 @@ def submit_quiz():
         else:
             correct_answers_count += 1
 
-        # Store each answered question in the Question table
+        # Store answered question into Question table (for logging only)
         cursor.execute("""
             INSERT INTO Question (quiz_id, attempt_id, description, correct_answer, is_correct, weakarea)
             VALUES (%s, %s, %s, %s, %s, %s)
@@ -428,7 +421,6 @@ def submit_quiz():
         "answers_details": answers_details,
         "weakareas_summary": weakareas_summary
     })
-
 
 
 if __name__ == "__main__":
