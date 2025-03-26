@@ -350,7 +350,7 @@ def submit_quiz():
     cursor.execute("""
         INSERT INTO Quiz (user_id, knowledge_level, score, weakareas, attempt_id)
         VALUES (%s, %s, %s, %s, %s)
-    """, (user_id, 0, 0, json.dumps([]), attempt_id))
+    """, (user_id, 0, 0, json.dumps({}), attempt_id))
     quiz_id = cursor.lastrowid
 
     # Step 3: Initialize tracking
@@ -402,22 +402,23 @@ def submit_quiz():
             "weakarea": weakarea
         })
 
-    # Step 5: Update score and weakareas in Quiz
+    # Step 5: Calculate final metrics
     score_percentage = (correct_answers_count / total_questions) * 100 if total_questions > 0 else 0
+    knowledge_level = correct_answers_count / total_questions if total_questions > 0 else 0.0
+    weakareas_json = json.dumps(weakarea_tracker)
     weakareas_summary = sorted(weakarea_tracker.items(), key=lambda x: x[1], reverse=True)
-    weakareas_json = json.dumps([w[0] for w in weakareas_summary])  # JSON fix!
 
+    # Step 6: Update quiz record
     cursor.execute("""
         UPDATE Quiz 
         SET score = %s, knowledge_level = %s, weakareas = %s 
         WHERE quiz_id = %s
-    """, (score_percentage, 0, weakareas_json, quiz_id))
+    """, (score_percentage, knowledge_level, weakareas_json, quiz_id))
 
-    # Commit changes
+    # Step 7: Commit and return response
     conn.commit()
     conn.close()
 
-    # Return the response
     return jsonify({
         "status": "success",
         "attempt_id": attempt_id,
@@ -427,6 +428,7 @@ def submit_quiz():
         "answers_details": answers_details,
         "weakareas_summary": weakareas_summary
     })
+
 
 
 if __name__ == "__main__":
