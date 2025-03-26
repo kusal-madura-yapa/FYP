@@ -329,11 +329,6 @@ def get_quiz_questions():
     })
 
 
-# Endpoint to submit a quiz attempt
-from flask import jsonify, request
-import json  # Required for safe JSON conversion
-import mysql.connector
-
 @app.route("/api/submit_quiz_re", methods=["POST"])
 def submit_quiz():
     data = request.get_json()
