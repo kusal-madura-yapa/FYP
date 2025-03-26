@@ -422,6 +422,39 @@ def submit_quiz():
         "weakareas_summary": weakareas_summary
     })
 
+@app.route("/api/weak_areas_latest", methods=["GET"])
+def get_weak_areas_latest():
+    user_id = request.args.get("userid")
+    if not user_id:
+        return jsonify({"error": "User ID is required"}), 400
+
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    # Get the quiz with the latest attempt_id for the user
+    cursor.execute("""
+        SELECT weakareas, quiz_id, attempt_id 
+        FROM Quiz 
+        WHERE user_id = %s 
+        ORDER BY attempt_id DESC 
+        LIMIT 1
+    """, (user_id,))
+    
+    result = cursor.fetchone()
+    conn.close()
+
+    if not result:
+        return jsonify({"error": "No quiz attempts found for this user!"}), 404
+
+    weakareas = json.loads(result["weakareas"]) if result["weakareas"] else {}
+
+    return jsonify({
+        "quiz_id": result["quiz_id"],
+        "attempt_id": result["attempt_id"],
+        "weak_areas": weakareas
+    })
+
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5001, debug=True)
