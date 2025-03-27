@@ -40,7 +40,6 @@ def get_db_connection():
         database=os.getenv('DB_NAME')
     )
 
-# Start quiz
 @app.route("/api/start_quiz", methods=["POST"])
 def start_quiz():
     data = request.get_json()
@@ -51,6 +50,10 @@ def start_quiz():
 
     conn = get_db_connection()
     cursor = conn.cursor()
+
+    # ❗ Delete previous video history before starting new quiz
+    cursor.execute("DELETE FROM VideoTrack WHERE user_id = %s", (user_id,))
+
     cursor.execute("INSERT INTO Quiz (user_id, knowledge_level, score, weakareas, attempt_id) VALUES (%s, %s, %s, %s, %s)",
                    (user_id, 0.5, 0, json.dumps({}), 1))
     quiz_id = cursor.lastrowid
@@ -68,6 +71,7 @@ def start_quiz():
     })
 
     return jsonify({"message": "Quiz started!", "quiz_id": quiz_id, "knowledge_level": 0.5})
+
 
 # Next question
 @app.route("/api/next_question", methods=["GET"])
@@ -182,7 +186,6 @@ def quiz_results():
 
     return jsonify(save_quiz_results())
 
-# Reset quiz data
 @app.route("/api/reset_data", methods=["POST"])
 def reset_data():
     global model
@@ -193,6 +196,9 @@ def reset_data():
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
+
+        # ❗ Delete all tracking and quiz-related data
+        cursor.execute("DELETE FROM VideoTrack")
         cursor.execute("DELETE FROM Question")
         cursor.execute("DELETE FROM Quiz")
         conn.commit()
@@ -205,6 +211,7 @@ def reset_data():
 
     except Exception as e:
         return jsonify({"error": f"Error resetting data: {str(e)}"}), 500
+
 
 # Get previous quiz records
 @app.route("/api/previous_records", methods=["GET"])
@@ -346,7 +353,6 @@ def get_quiz_questions():
         "questions_with_fake_answers": result
     })
 
-
 @app.route("/api/submit_quiz_re", methods=["POST"])
 def submit_quiz():
     data = request.get_json()
@@ -357,9 +363,14 @@ def submit_quiz():
     user_id = data['user_id']
     user_answers = data['answers']
 
-    # Step 1: Get the latest attempt_id for the user
+    # Step 0: Connect to DB
     conn = get_db_connection()
     cursor = conn.cursor()
+
+    # Step 0.1: Delete previous video tracking for this user (to reset history for this new quiz)
+    cursor.execute("DELETE FROM VideoTrack WHERE user_id = %s", (user_id,))
+
+    # Step 1: Get the latest attempt_id for the user
     cursor.execute("SELECT MAX(attempt_id) FROM Quiz WHERE user_id = %s", (user_id,))
     latest_attempt = cursor.fetchone()[0]
     attempt_id = (latest_attempt or 0) + 1
@@ -440,6 +451,8 @@ def submit_quiz():
         "weakareas_summary": weakareas_summary
     })
 
+
+
 @app.route("/api/weak_areas_latest", methods=["GET"])
 def get_weak_areas_latest():
     user_id = request.args.get("userid")
@@ -449,7 +462,7 @@ def get_weak_areas_latest():
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # Get the quiz with the latest attempt_id for the user
+    # Step 1: Get the latest quiz attempt
     cursor.execute("""
         SELECT weakareas, quiz_id, attempt_id 
         FROM Quiz 
@@ -459,18 +472,135 @@ def get_weak_areas_latest():
     """, (user_id,))
     
     result = cursor.fetchone()
-    conn.close()
-
     if not result:
+        conn.close()
         return jsonify({"error": "No quiz attempts found for this user!"}), 404
 
+    quiz_id = result["quiz_id"]
     weakareas = json.loads(result["weakareas"]) if result["weakareas"] else {}
 
+    # Step 2: Get relevant videos from VideoResources
+    video_suggestions = {}
+    if weakareas:
+        placeholders = ', '.join(['%s'] * len(weakareas))
+        cursor.execute(
+            f"SELECT * FROM VideoResources WHERE weakarea IN ({placeholders})",
+            list(weakareas.keys())
+        )
+        videos = cursor.fetchall()
+
+        # Step 3: Get watched status from VideoTrack
+        cursor.execute("""
+            SELECT video_id, watched FROM VideoTrack
+            WHERE user_id = %s AND quiz_id = %s
+        """, (user_id, quiz_id))
+        watch_data = cursor.fetchall()
+        watched_map = {row["video_id"]: row["watched"] for row in watch_data}
+
+        for v in videos:
+            wa = v["weakarea"]
+            vid = v["video_id"]
+            video_suggestions.setdefault(wa, []).append({
+                "video_id": vid,
+                "title": v["video_title"],
+                "url": v["video_url"],
+                "description": v["description"],
+                "watched": watched_map.get(vid, False)
+            })
+
+    conn.close()
+
     return jsonify({
-        "quiz_id": result["quiz_id"],
+        "quiz_id": quiz_id,
         "attempt_id": result["attempt_id"],
-        "weak_areas": weakareas
+        "weak_areas": weakareas,
+        "suggested_videos": video_suggestions
     })
+
+
+@app.route("/api/track_video", methods=["POST"])
+def track_video():
+    data = request.get_json()
+    user_id = data.get("user_id")
+    video_id = data.get("video_id")
+    quiz_id = data.get("quiz_id")
+    watched = data.get("watched", True)
+
+    if not all([user_id, video_id, quiz_id]):
+        return jsonify({"error": "Missing fields!"}), 400
+
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # ✅ Use the correct column name: track_id
+    cursor.execute("""
+        SELECT track_id FROM VideoTrack
+        WHERE user_id = %s AND video_id = %s AND quiz_id = %s
+    """, (user_id, video_id, quiz_id))
+    existing = cursor.fetchone()
+
+    if existing:
+        cursor.execute("""
+            UPDATE VideoTrack SET watched = %s, clicked_at = NOW()
+            WHERE track_id = %s
+        """, (watched, existing[0]))  # or existing["track_id"] if using dictionary=True
+    else:
+        cursor.execute("""
+            INSERT INTO VideoTrack (user_id, video_id, quiz_id, watched)
+            VALUES (%s, %s, %s, %s)
+        """, (user_id, video_id, quiz_id, watched))
+
+    conn.commit()
+    conn.close()
+
+    return jsonify({"status": "updated", "watched": watched})
+
+@app.route("/api/video_history", methods=["GET"])
+def video_history():
+    user_id = request.args.get("userid")
+    if not user_id:
+        return jsonify({"error": "User ID is required"}), 400
+
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    # Fetch all video tracking info with video details
+    cursor.execute("""
+        SELECT 
+            vt.quiz_id,
+            vt.video_id,
+            vr.weakarea,
+            vr.video_title,
+            vr.video_url,
+            vr.description,
+            vt.watched,
+            vt.clicked_at
+        FROM VideoTrack vt
+        JOIN VideoResources vr ON vt.video_id = vr.video_id
+        WHERE vt.user_id = %s
+        ORDER BY vt.quiz_id DESC, vt.clicked_at DESC
+    """, (user_id,))
+    
+    rows = cursor.fetchall()
+    conn.close()
+
+    # Group by quiz_id
+    history = {}
+    for row in rows:
+        quiz_id = row["quiz_id"]
+        if quiz_id not in history:
+            history[quiz_id] = []
+        history[quiz_id].append({
+            "video_id": row["video_id"],
+            "title": row["video_title"],
+            "url": row["video_url"],
+            "weakarea": row["weakarea"],
+            "description": row["description"],
+            "watched": row["watched"],
+            "clicked_at": row["clicked_at"].strftime('%Y-%m-%d %H:%M:%S')
+        })
+
+    return jsonify({"user_id": user_id, "video_history": history})
 
 
 
