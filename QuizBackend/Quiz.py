@@ -242,7 +242,6 @@ def previous_records():
     conn.close()
     return jsonify({"history": records})
 
-# Get weak areas
 @app.route("/api/weak_areas", methods=["GET"])
 def weak_areas():
     user_id = request.args.get("userid")
@@ -251,30 +250,49 @@ def weak_areas():
 
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
-    cursor.execute("SELECT * FROM Quiz WHERE user_id = %s ORDER BY quiz_id DESC", (user_id,))
-    quizzes = cursor.fetchall()
 
-    weak_areas_records = []
-    for quiz in quizzes:
-        weak_areas = json.loads(quiz["weakareas"]) if quiz["weakareas"] else {}
+    # ✅ Get the latest quiz attempt for the user
+    cursor.execute("""
+        SELECT * FROM Quiz 
+        WHERE user_id = %s 
+        ORDER BY attempt_id DESC 
+        LIMIT 1
+    """, (user_id,))
+    latest_quiz = cursor.fetchone()
 
-        weak_areas_records.append({
-            "quiz_id": quiz["quiz_id"],
-            "weak_areas": weak_areas
-        })
+    if not latest_quiz:
+        conn.close()
+        return jsonify({"error": "No quiz attempts found for this user!"}), 404
+
+    weak_areas = json.loads(latest_quiz["weakareas"]) if latest_quiz["weakareas"] else {}
+    video_suggestions = {}
+
+    if weak_areas:
+        placeholders = ', '.join(['%s'] * len(weak_areas))
+        cursor.execute(
+            f"SELECT * FROM VideoResources WHERE weakarea IN ({placeholders})",
+            list(weak_areas.keys())
+        )
+        videos = cursor.fetchall()
+
+        for v in videos:
+            wa = v["weakarea"]
+            video_suggestions.setdefault(wa, []).append({
+                "video_id": v["video_id"],
+                "title": v["video_title"],
+                "url": v["video_url"],
+                "description": v["description"]
+            })
 
     conn.close()
-    return jsonify({"history": weak_areas_records})
 
-# # Get users
-# @app.route("/api/users", methods=["GET"])
-# def get_users():
-#     conn = get_db_connection()
-#     cursor = conn.cursor(dictionary=True)
-#     cursor.execute("SELECT * FROM users")
-#     users = cursor.fetchall()
-#     conn.close()
-#     return jsonify(users)
+    return jsonify({
+        "quiz_id": latest_quiz["quiz_id"],
+        "attempt_id": latest_quiz["attempt_id"],
+        "weak_areas": weak_areas,
+        "suggested_videos": video_suggestions
+    })
+
 
 # Endpoint to retrieve quiz questions with fake answers
 @app.route("/api/get_quiz_questions_re", methods=["GET"])
