@@ -40,20 +40,49 @@ def get_db_connection():
         database=os.getenv('DB_NAME')
     )
 
+def get_logged_in_user_id():
+    user_id = session.get("user_id")
+    if not user_id:
+        raise PermissionError("User not logged in.")
+    return user_id
+
+@app.route("/api/login", methods=["POST"])
+def login():
+    data = request.get_json()
+    username = data.get("username")
+
+    if not username:
+        return jsonify({"error": "Username is required"}), 400
+
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM users WHERE user_name = %s", (username,))
+    user = cursor.fetchone()
+    conn.close()
+
+    if user:
+        session["user_id"] = user["user_id"]
+        session["username"] = user["user_name"]
+        return jsonify({"message": "Login successful", "user_id": user["user_id"]})
+    else:
+        return jsonify({"error": "User not found!"}), 404
+    
+@app.route("/api/logout", methods=["POST"])
+def logout():
+    session.clear()
+    return jsonify({"message": "Logged out"})
+
 @app.route("/api/start_quiz", methods=["POST"])
 def start_quiz():
-    data = request.get_json()
-    user_id = data.get("user_id")
-
-    if not user_id:
-        return jsonify({"error": "User ID is required"}), 400
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
 
     conn = get_db_connection()
     cursor = conn.cursor()
 
-    # ❗ Delete previous video history before starting new quiz
     cursor.execute("DELETE FROM VideoTrack WHERE user_id = %s", (user_id,))
-
     cursor.execute("INSERT INTO Quiz (user_id, knowledge_level, score, weakareas, attempt_id) VALUES (%s, %s, %s, %s, %s)",
                    (user_id, 0.5, 0, json.dumps({}), 1))
     quiz_id = cursor.lastrowid
@@ -62,7 +91,6 @@ def start_quiz():
 
     session.update({
         "quiz_id": quiz_id,
-        "user_id": user_id,
         "knowledge_level": 0.5,
         "questions_asked": [],
         "score": 0,
@@ -216,9 +244,10 @@ def reset_data():
 # Get previous quiz records
 @app.route("/api/previous_records", methods=["GET"])
 def previous_records():
-    user_id = request.args.get("userid")
-    if not user_id:
-        return jsonify({"error": "User ID is required"}), 400
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
 
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
@@ -236,7 +265,7 @@ def previous_records():
 
         records.append({
             "quiz_id": quiz["quiz_id"],
-            "attempt_id": quiz["attempt_id"],  # Add this line
+            "attempt_id": quiz["attempt_id"],
             "total_questions": len(questions),
             "final_score": quiz["score"],
             "final_knowledge_level": quiz["knowledge_level"],
@@ -245,15 +274,15 @@ def previous_records():
             "incorrect_answers": incorrect_answers
         })
 
-
     conn.close()
     return jsonify({"history": records})
 
 @app.route("/api/weak_areas", methods=["GET"])
 def weak_areas():
-    user_id = request.args.get("userid")
-    if not user_id:
-        return jsonify({"error": "User ID is required"}), 400
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
 
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
@@ -455,9 +484,10 @@ def submit_quiz():
 
 @app.route("/api/weak_areas_latest", methods=["GET"])
 def get_weak_areas_latest():
-    user_id = request.args.get("userid")
-    if not user_id:
-        return jsonify({"error": "User ID is required"}), 400
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
 
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
@@ -521,7 +551,11 @@ def get_weak_areas_latest():
 @app.route("/api/track_video", methods=["POST"])
 def track_video():
     data = request.get_json()
-    user_id = data.get("user_id")
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
+    
     video_id = data.get("video_id")
     quiz_id = data.get("quiz_id")
     watched = data.get("watched", True)
@@ -557,9 +591,10 @@ def track_video():
 
 @app.route("/api/video_history", methods=["GET"])
 def video_history():
-    user_id = request.args.get("userid")
-    if not user_id:
-        return jsonify({"error": "User ID is required"}), 400
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
 
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
