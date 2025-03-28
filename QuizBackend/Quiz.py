@@ -142,19 +142,26 @@ def register():
         if cursor.fetchone():
             return jsonify({"error": "Username already taken"}), 409
 
-        # Insert new user with hashed password
+        # ✅ Get the max user_id and increment it
+        cursor.execute("SELECT MAX(user_id) FROM users")
+        result = cursor.fetchone()
+        next_user_id = (result[0] or 0) + 1  # if None, start at 1
+
+        # Insert with manual user_id
         cursor.execute(
-            "INSERT INTO users (user_name, password) VALUES (%s, %s)",
-            (username, hashed_password)
+            "INSERT INTO users (user_id, user_name, password) VALUES (%s, %s, %s)",
+            (next_user_id, username, hashed_password)
         )
         conn.commit()
         conn.close()
 
-        return jsonify({"message": "User registered successfully"}), 201
+        return jsonify({"message": "User registered successfully", "user_id": next_user_id}), 201
 
     except Exception as e:
         print("Error during registration:", e)
         return jsonify({"error": "Server error during registration"}), 500
+
+
 
 
 # Next question
