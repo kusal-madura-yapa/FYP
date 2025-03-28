@@ -8,30 +8,31 @@ import pandas as pd
 import mysql.connector
 import json
 from stable_baselines3 import DQN
+from werkzeug.security import check_password_hash
 
 # Load environment variables
 load_dotenv()
 
-# Flask setup
+# Flask app setup
 app = Flask(__name__)
 app.config["SESSION_TYPE"] = "filesystem"
 app.config["SECRET_KEY"] = "supersecretkey"
 app.config["SESSION_PERMANENT"] = False
 Session(app)
 
-# Allow CORS for React frontend
+# Allow frontend access
 CORS(app, origins=["http://localhost:3000"], supports_credentials=True)
 
-# Load dataset and model
+# Load data/model if available
 dataset_path = "QuizBackend/data/preprocessed_dataset.csv"
 model_path = "QuizBackend/data/quiz_model.zip"
 dataset = pd.read_csv(dataset_path) if os.path.exists(dataset_path) else pd.DataFrame()
 model = DQN.load(model_path) if os.path.exists(model_path) else None
 
-# Set a minimum number of questions
+# Constants
 MIN_QUESTIONS = 10
 
-# Database connection
+# Database connection helper
 def get_db_connection():
     return mysql.connector.connect(
         host=os.getenv('DB_HOST'),
@@ -40,19 +41,22 @@ def get_db_connection():
         database=os.getenv('DB_NAME')
     )
 
+# Session user check
 def get_logged_in_user_id():
     user_id = session.get("user_id")
-    if not user_id:
+    if user_id is None:
         raise PermissionError("User not logged in.")
     return user_id
 
+# 🔐 LOGIN
 @app.route("/api/login", methods=["POST"])
 def login():
     data = request.get_json()
     username = data.get("username")
+    password = data.get("password")
 
-    if not username:
-        return jsonify({"error": "Username is required"}), 400
+    if not username or not password:
+        return jsonify({"error": "Username and password are required"}), 400
 
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
@@ -60,18 +64,21 @@ def login():
     user = cursor.fetchone()
     conn.close()
 
-    if user:
+    if user and check_password_hash(user["password"], password):
+        session.clear()  # Clean any old session
         session["user_id"] = user["user_id"]
         session["username"] = user["user_name"]
         return jsonify({"message": "Login successful", "user_id": user["user_id"]})
     else:
-        return jsonify({"error": "User not found!"}), 404
-    
+        return jsonify({"error": "Invalid username or password"}), 401
+
+# 🚪 LOGOUT
 @app.route("/api/logout", methods=["POST"])
 def logout():
     session.clear()
     return jsonify({"message": "Logged out"})
 
+# 🚀 START QUIZ
 @app.route("/api/start_quiz", methods=["POST"])
 def start_quiz():
     try:
@@ -82,23 +89,72 @@ def start_quiz():
     conn = get_db_connection()
     cursor = conn.cursor()
 
+    # Clean video track data for this user
     cursor.execute("DELETE FROM VideoTrack WHERE user_id = %s", (user_id,))
-    cursor.execute("INSERT INTO Quiz (user_id, knowledge_level, score, weakareas, attempt_id) VALUES (%s, %s, %s, %s, %s)",
-                   (user_id, 0.5, 0, json.dumps({}), 1))
+
+    # Create new quiz entry
+    initial_knowledge = 0.5
+    initial_score = 0
+    attempt_id = 1  # You might want to calculate this dynamically later
+    cursor.execute(
+        "INSERT INTO Quiz (user_id, knowledge_level, score, weakareas, attempt_id) VALUES (%s, %s, %s, %s, %s)",
+        (user_id, initial_knowledge, initial_score, json.dumps({}), attempt_id)
+    )
     quiz_id = cursor.lastrowid
     conn.commit()
     conn.close()
 
+    # Store quiz session state
     session.update({
         "quiz_id": quiz_id,
-        "knowledge_level": 0.5,
+        "knowledge_level": initial_knowledge,
+        "score": initial_score,
         "questions_asked": [],
-        "score": 0,
         "weak_areas": {},
-        "attempt_id": 1
+        "attempt_id": attempt_id
     })
 
-    return jsonify({"message": "Quiz started!", "quiz_id": quiz_id, "knowledge_level": 0.5})
+    return jsonify({
+        "message": "Quiz started!",
+        "quiz_id": quiz_id,
+        "knowledge_level": initial_knowledge
+    })
+
+from werkzeug.security import generate_password_hash
+
+@app.route("/api/register", methods=["POST"])
+def register():
+    data = request.get_json()
+    username = data.get("username")
+    password = data.get("password")
+
+    if not username or not password:
+        return jsonify({"error": "Username and password are required"}), 400
+
+    hashed_password = generate_password_hash(password)
+
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Check if username already exists
+        cursor.execute("SELECT * FROM users WHERE user_name = %s", (username,))
+        if cursor.fetchone():
+            return jsonify({"error": "Username already taken"}), 409
+
+        # Insert new user with hashed password
+        cursor.execute(
+            "INSERT INTO users (user_name, password) VALUES (%s, %s)",
+            (username, hashed_password)
+        )
+        conn.commit()
+        conn.close()
+
+        return jsonify({"message": "User registered successfully"}), 201
+
+    except Exception as e:
+        print("Error during registration:", e)
+        return jsonify({"error": "Server error during registration"}), 500
 
 
 # Next question
@@ -333,14 +389,20 @@ def weak_areas():
 # Endpoint to retrieve quiz questions with fake answers
 @app.route("/api/get_quiz_questions_re", methods=["GET"])
 def get_quiz_questions():
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
+
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # Get the latest 10 frequently incorrect questions by max attempt_id per question
     cursor.execute("""
         SELECT description, correct_answer, attempt_id, weakarea, COUNT(*) AS attempt_count 
         FROM Question 
-        WHERE is_correct = 0
+        WHERE is_correct = 0 AND quiz_id IN (
+            SELECT quiz_id FROM Quiz WHERE user_id = %s
+        )
         GROUP BY description, correct_answer, weakarea, attempt_id
         HAVING attempt_id = (
             SELECT MAX(q2.attempt_id)
@@ -350,7 +412,7 @@ def get_quiz_questions():
         )
         ORDER BY attempt_count DESC
         LIMIT 10;
-    """)
+    """, (user_id,))
     questions = cursor.fetchall()
     conn.close()
 
@@ -358,15 +420,10 @@ def get_quiz_questions():
         return jsonify({"error": "No questions found!"}), 404
 
     result = []
-
     for question in questions:
         correct_answer = question["correct_answer"]
-
-        # Get fake answers from dataset, excluding the correct one
         wrong_answers = dataset[dataset["Correct Answer"] != correct_answer]["Correct Answer"].unique().tolist()
         wrong_answers = random.sample(wrong_answers, min(len(wrong_answers), 3))
-
-        # Shuffle all options
         options = [correct_answer] + wrong_answers
         random.shuffle(options)
 
@@ -382,15 +439,21 @@ def get_quiz_questions():
         "questions_with_fake_answers": result
     })
 
+
 @app.route("/api/submit_quiz_re", methods=["POST"])
 def submit_quiz():
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
+
     data = request.get_json()
+    if not data or 'answers' not in data:
+        return jsonify({"error": "Missing answers in request!"}), 400
 
-    if not data or 'answers' not in data or 'user_id' not in data:
-        return jsonify({"error": "Missing answers or user_id in request!"}), 400
-
-    user_id = data['user_id']
     user_answers = data['answers']
+    # ... (same rest of the code but remove user_id references from body and use the session one)
+
 
     # Step 0: Connect to DB
     conn = get_db_connection()
