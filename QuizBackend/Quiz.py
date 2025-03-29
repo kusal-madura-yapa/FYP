@@ -192,6 +192,36 @@ def leaderboard():
         "leaderboard": data
     })
 
+# @app.route("/api/clear_all_data", methods=["POST"])
+# def clear_all_data():
+#     try:
+#         conn = get_db_connection()
+#         cursor = conn.cursor()
+
+#         # Delete all quiz-related data first (respect FK constraints)
+#         cursor.execute("DELETE FROM VideoTrack")
+#         cursor.execute("DELETE FROM Question")
+#         cursor.execute("DELETE FROM Quiz")
+
+#         # Optional: Delete from VideoResources
+#         # cursor.execute("DELETE FROM VideoResources")
+
+#         # Delete users (last, due to FK)
+#         cursor.execute("DELETE FROM users")
+
+#         conn.commit()
+#         conn.close()
+
+#         return jsonify({
+#             "status": "success",
+#             "message": "All database records have been cleared."
+#         })
+
+#     except Exception as e:
+#         return jsonify({
+#             "status": "error",
+#             "message": f"Failed to clear data: {str(e)}"
+#         }), 500
 
 
 # Next question
