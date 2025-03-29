@@ -1,0 +1,150 @@
+Question,Correct Answer,Difficulty,Category
+Can a lambda function have multiple expressions?,"No, it can have only one expression.",Medium,Lambda Functions
+What is an infinite loop?,A loop that never ends unless externally interrupted.,Hard,Control Flow
+What is a recursive function?,A function that calls itself.,Hard,Functions
+Can you return a lambda function from another function?,"Yes, functions can return lambda expressions.",Hard,Lambda Functions
+How do you use a lambda function with filter()?,"filter(lambda x: x > 0, iterable)",Medium,Lambda Functions
+What is an object in Python?,An instance of a class.,Easy,Object-Oriented Programming
+How do you import only specific functions from a module?,Using from module import function.,Medium,Modules and Packages
+What does the len() function do?,Returns the number of items in an object.,Easy,Built-in Functions
+What is the benefit of using packages?,They help organize code and avoid naming conflicts.,Hard,Modules and Packages
+What does the 'global' keyword do?,It declares that a variable inside a function is global.,Medium,Scope and Namespaces
+What is a function in Python?,A block of code that performs a specific task and can be reused.,Easy,Functions
+What does the 'else' statement do?,Executes a block of code if the 'if' condition is false.,Easy,Control Flow
+What is method overriding in Python?,Redefining a method in a subclass that exists in the parent class.,Hard,Object-Oriented Programming
+What is variable shadowing in Python?,When a local variable has the same name as a global variable.,Hard,Variables
+Can you nest control flow statements in Python?,"Yes, control flow statements can be nested inside each other.",Hard,Control Flow
+Can you use nested loops in a list comprehension?,"Yes, list comprehensions can have nested loops.",Hard,List Comprehensions
+What is the base class for all exceptions in Python?,BaseException,Hard,Exception Handling
+What is a lambda function in Python?,An anonymous function defined with the lambda keyword.,Easy,Lambda Functions
+Are list comprehensions more efficient than for loops?,"Yes, they are generally more concise and faster.",Medium,List Comprehensions
+What block is executed if an error occurs in try block?,except,Easy,Exception Handling
+What is Object-Oriented Programming (OOP)?,A programming paradigm based on the concept of objects.,Easy,Object-Oriented Programming
+Can sets contain duplicate values?,"No, sets only store unique values.",Easy,Data Structures
+What is the difference between a tuple and a list?,"Tuples are immutable, lists are mutable.",Medium,Data Types
+How do you iterate through a dictionary?,"Using for key, value in dict.items().",Medium,Data Structures
+What is the difference between a set and a dictionary?,Sets store values; dictionaries store key-value pairs.,Hard,Data Structures
+What does the sorted() function do?,Returns a new sorted list from the items of any iterable.,Medium,Built-in Functions
+How do you define a function in Python?,Using the 'def' keyword.,Easy,Functions
+What are comparison operators used for?,To compare two values and return a Boolean result.,Easy,Operators
+Which method is used to write data to a file?,The write() method.,Medium,File Handling
+What keyword is used to define a class in Python?,The 'class' keyword.,Easy,Object-Oriented Programming
+How do you check the data type of a variable?,Using the type() function.,Easy,Data Types
+What does the 'break' statement do inside a loop?,It exits the loop immediately.,Medium,Control Flow
+What is the standard library in Python?,A collection of modules and packages included with Python.,Medium,Modules and Packages
+What keyword is used for conditional branching in Python?,The 'if' keyword.,Easy,Control Flow
+How do you read the entire contents of a file at once?,Using the read() method.,Easy,File Handling
+What does the '//' operator do?,Performs floor division and returns the largest whole number.,Medium,Operators
+"What is the result of [x.upper() for x in ['a', 'b', 'c']]?","['A', 'B', 'C']",Easy,List Comprehensions
+What is a dictionary in Python?,An unordered collection of key-value pairs.,Medium,Data Types
+What is the scope of a variable declared inside a function?,It is local to that function.,Medium,Variables
+How do you create an object from a class?,By calling the class name followed by parentheses.,Easy,Object-Oriented Programming
+How do you create a set in Python?,Using curly braces or the set() function.,Easy,Data Structures
+What is the LEGB rule in Python?,"It defines the lookup order: Local, Enclosing, Global, Built-in.",Medium,Scope and Namespaces
+Can you access a variable outside its scope?,"No, accessing a variable outside its scope raises a NameError.",Medium,Scope and Namespaces
+What does the 'continue' statement do?,Skips the current iteration and moves to the next one.,Medium,Control Flow
+What is the purpose of control flow in Python?,To manage the order in which code is executed.,Easy,Control Flow
+What are the four types of variable scope in Python?,"Local, Enclosing, Global, and Built-in (LEGB).",Medium,Scope and Namespaces
+What does the 'finally' block do?,"Executes code no matter what, even if an error occurs.",Medium,Exception Handling
+How do you get the maximum value from a list?,Using the max() function.,Easy,Built-in Functions
+How do you use a lambda function with map()?,"map(lambda x: x*2, iterable)",Medium,Lambda Functions
+What is the precedence of operators in Python?,It determines the order in which operations are evaluated.,Hard,Operators
+How can you loop through both index and value in a list?,Using enumerate().,Medium,Loops
+What is the output of True and False?,FALSE,Easy,Operators
+How do you alias a module while importing?,Using import module as alias.,Medium,Modules and Packages
+What is a variable in Python?,A variable is a name that refers to a value.,Easy,Variables
+What does the type() function return?,Returns the type of an object.,Easy,Built-in Functions
+How do you list all functions and variables in a module?,Using the dir() function.,Hard,Modules and Packages
+Can Python variables change type after assignment?,"Yes, Python is dynamically typed.",Hard,Data Types
+What does the 'r' mode do when opening a file?,Opens the file for reading.,Easy,File Handling
+How do you ensure a file is properly closed after use?,Use a with statement (context manager).,Medium,File Handling
+How do you import a module in Python?,Using the import statement.,Easy,Modules and Packages
+How do you access a value in a dictionary?,Using the corresponding key.,Easy,Data Structures
+What is the result of type(3.14)?,float.,Medium,Data Types
+What type of data is a list in Python?,list - a mutable sequence type.,Medium,Data Types
+What data type is used for true/false values?,bool.,Easy,Data Types
+What does the 'continue' statement do in a loop?,Skips the current iteration and moves to the next.,Medium,Loops
+Which function is used to open a file in Python?,The open() function.,Easy,File Handling
+What is an infinite loop?,A loop that runs forever unless explicitly stopped.,Medium,Loops
+Is it possible to catch all exceptions with one block?,"Yes, by using except Exception as e.",Hard,Exception Handling
+What happens if you try to open a non-existent file in 'r' mode?,A FileNotFoundError is raised.,Hard,File Handling
+Can loops be nested in Python?,"Yes, one loop can be placed inside another.",Medium,Loops
+What is the purpose of the return statement in a function?,It sends a result back to the caller.,Easy,Functions
+What is the purpose of the init method in Python?,To initialize an objectÕs attributes.,Medium,Object-Oriented Programming
+How do you iterate over a dictionary in a loop?,"Using for key, value in dict.items().",Hard,Loops
+What is the purpose of the isinstance() function?,Checks if an object is an instance of a class or a tuple of classes.,Medium,Built-in Functions
+What is a package in Python?,A directory containing an init.py file and modules.,Medium,Modules and Packages
+What happens if a local variable has the same name as a global variable?,The local variable shadows the global one in its scope.,Medium,Scope and Namespaces
+What are the built-in data structures in Python?,"List, Tuple, Set, Dictionary",Easy,Data Structures
+Can list comprehensions include conditions?,"Yes, using an 'if' clause.",Medium,List Comprehensions
+What does the 'global' keyword do in Python?,It allows a variable to be used globally across functions.,Medium,Variables
+What does the map() function do?,Applies a function to all items in an iterable.,Hard,Built-in Functions
+What does the 'else' block do in exception handling?,Executes if no exceptions are raised in the try block.,Hard,Exception Handling
+What is list comprehension in Python?,A concise way to create lists using a single line of code.,Easy,List Comprehensions
+What does 'self' refer to in a class method?,The instance calling the method.,Medium,Object-Oriented Programming
+What is a namespace in Python?,A container that maps names to objects.,Easy,Scope and Namespaces
+Can lambda functions be used inside other functions?,"Yes, they can be defined and used locally.",Hard,Lambda Functions
+What is inheritance in Python?,A mechanism to create a new class from an existing class.,Medium,Object-Oriented Programming
+What is a parameter in a function?,A variable listed inside the parentheses in the function definition.,Medium,Functions
+What is a constant variable in Python?,"A variable that is meant to stay unchanged, usually written in uppercase.",Hard,Variables
+What does the 'a' mode do when opening a file?,Opens the file for appending content at the end.,Medium,File Handling
+What is the syntax of a lambda function?,lambda arguments: expression,Easy,Lambda Functions
+What is the use of the 'else' block in a loop?,It runs if the loop is not terminated by a break.,Hard,Loops
+How can you access a global variable inside a function?,By declaring it with the 'global' keyword.,Medium,Scope and Namespaces
+Can you handle multiple exceptions in one block?,"Yes, using multiple except blocks or a tuple of exceptions.",Medium,Exception Handling
+What exception is raised when a file is not found?,FileNotFoundError,Medium,Exception Handling
+What are the two main types of loops in Python?,for loop and while loop.,Easy,Loops
+Can variable names contain special characters like @ or #?,"No, only letters, numbers, and underscores are allowed.",Hard,Variables
+What is the role of the 'elif' keyword?,Checks another condition if the previous 'if' was false.,Medium,Control Flow
+What is the difference between a parameter and an argument?,A parameter is in the function definition; an argument is the value passed.,Hard,Functions
+What is a nested list?,A list that contains other lists as elements.,Medium,Data Structures
+How can you check the type of a variable?,Using the type() function.,Easy,Variables
+How does a 'while' loop work?,It runs as long as a condition is true.,Medium,Control Flow
+What is polymorphism in Python OOP?,The ability to use a common interface for different data types.,Hard,Object-Oriented Programming
+How is a lambda function different from a def function?,Lambda is anonymous and can only contain a single expression.,Medium,Lambda Functions
+How do you raise a custom exception?,Using the raise statement.,Medium,Exception Handling
+What happens if you try to use a variable before assigning it?,It raises a NameError.,Medium,Variables
+How do you call a function in Python?,By writing the function name followed by parentheses.,Easy,Functions
+What is the result of 2 ** 3 in Python?,8,Easy,Operators
+Can a variable name start with a number in Python?,"No, variable names cannot start with a number.",Easy,Variables
+What is the purpose of init.py file?,It marks a directory as a Python package.,Medium,Modules and Packages
+What does [x for x in range(10) if x % 2 == 0] produce?,A list of even numbers from 0 to 9.,Medium,List Comprehensions
+How do you remove duplicates from a list?,Convert it to a set.,Medium,Data Structures
+Which symbols are used to define a list comprehension?,Square brackets [].,Easy,List Comprehensions
+What is an argument in a function call?,A value passed to a function when calling it.,Medium,Functions
+How can you read a file line by line?,Using a for loop on the file object.,Medium,File Handling
+Can a function return multiple values?,"Yes, by returning them as a tuple.",Medium,Functions
+Can you create your own modules in Python?,"Yes, by writing Python code in a .py file.",Easy,Modules and Packages
+How does the zip() function work?,Aggregates elements from two or more iterables into tuples.,Medium,Built-in Functions
+What is scope in Python?,The region of a program where a variable is accessible.,Easy,Scope and Namespaces
+What is a module in Python?,A file containing Python definitions and statements.,Easy,Modules and Packages
+What does a 'while' loop do in Python?,Repeats as long as a condition is true.,Easy,Loops
+What does the 'w' mode do when opening a file?,Opens the file for writing and overwrites existing content.,Easy,File Handling
+What happens if the expression in a list comprehension causes an error?,The comprehension raises an exception at runtime.,Hard,List Comprehensions
+What does a 'for' loop do in Python?,Iterates over items of a sequence like a list or string.,Easy,Loops
+How do you check if a file exists before opening it?,Use os.path.exists() function.,Hard,File Handling
+What is the built-in namespace in Python?,It contains built-in functions and exceptions available everywhere.,Hard,Scope and Namespaces
+What does the 'in' operator do?,Checks if a value exists in a sequence.,Medium,Operators
+What is the difference between a list and a tuple?,"Lists are mutable, tuples are immutable.",Medium,Data Structures
+What is the type of value returned by the input() function?,str (string).,Easy,Data Types
+How would you flatten a 2D list using list comprehension?,[item for sublist in lst for item in sublist],Hard,List Comprehensions
+What does the input() function do?,Takes input from the user as a string.,Easy,Built-in Functions
+What is exception handling in Python?,A way to handle errors gracefully without crashing the program.,Easy,Exception Handling
+What is encapsulation in OOP?,Hiding internal object details and showing only necessary parts.,Hard,Object-Oriented Programming
+What is a built-in function in Python?,A function that is always available in Python without importing any module.,Easy,Built-in Functions
+How do you assign a value to a variable in Python?,"Using the equals sign (=), e.g., x = 10.",Easy,Variables
+How would you create a list of squares from 0 to 9 using list comprehension?,[x**2 for x in range(10)],Medium,List Comprehensions
+What keyword is used to handle exceptions?,try,Easy,Exception Handling
+What are logical operators in Python?,"and, or, not",Easy,Operators
+What are arithmetic operators in Python?,"+, -, *, /, %, //, **",Easy,Operators
+What is a default parameter in Python functions?,A parameter that assumes a default value if not provided.,Medium,Functions
+What does the 'nonlocal' keyword do?,It refers to a variable in the nearest enclosing scope.,Hard,Scope and Namespaces
+How do you assign a lambda function to a variable?,"By using assignment, e.g., f = lambda x: x + 1",Medium,Lambda Functions
+What is the primary use of a dictionary in Python?,To store key-value pairs.,Easy,Data Structures
+How do you find the ASCII value of a character in Python?,Using the ord() function.,Hard,Built-in Functions
+What are the basic data types in Python?,"int, float, str, bool, and NoneType.",Easy,Data Types
+"What is the output of lambda x, y: x + y when called with 2 and 3?",5 [ Five ],Easy,Lambda Functions
+What is the difference between '=' and '=='?,"'=' assigns a value, '==' compares two values.",Medium,Operators
+What type of loop is used to iterate over a sequence?,The 'for' loop.,Easy,Control Flow
+What keyword is used to exit a loop prematurely?,break,Easy,Loops
+What does the '==' operator check?,Checks if two values are equal.,Easy,Operators

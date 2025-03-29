@@ -9,6 +9,8 @@ import mysql.connector
 import json
 from stable_baselines3 import DQN
 from werkzeug.security import check_password_hash
+from werkzeug.security import generate_password_hash
+
 
 # Load environment variables
 load_dotenv()
@@ -120,7 +122,6 @@ def start_quiz():
         "knowledge_level": initial_knowledge
     })
 
-from werkzeug.security import generate_password_hash
 
 @app.route("/api/register", methods=["POST"])
 def register():
@@ -161,6 +162,35 @@ def register():
         print("Error during registration:", e)
         return jsonify({"error": "Server error during registration"}), 500
 
+
+@app.route("/api/leaderboard", methods=["GET"])
+def leaderboard():
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    # ✅ LEFT JOIN to include users with no quiz data
+    cursor.execute("""
+        SELECT 
+            u.user_id,
+            u.user_name,
+            q.quiz_id,
+            q.attempt_id,
+            q.score,
+            q.knowledge_level,
+            q.weakareas
+        FROM users u
+        LEFT JOIN Quiz q ON u.user_id = q.user_id
+        ORDER BY u.user_id, q.attempt_id
+    """)
+
+    data = cursor.fetchall()
+    conn.close()
+
+    return jsonify({
+        "status": "success",
+        "total": len(data),
+        "leaderboard": data
+    })
 
 
 

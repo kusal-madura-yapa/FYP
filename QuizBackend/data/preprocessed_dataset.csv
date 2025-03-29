@@ -1,1001 +1,150 @@
 Question,Correct Answer,Difficulty,Category
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,2,Variables
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,2,Exception Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",3,Built-in Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,3,Variables
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,3,Loops
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,2,Control Flow
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,2,Loops
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",1,Lambda Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,3,Object-Oriented Programming
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of variables in Python?,Stores data values that can be used and modified in a program.,1,Variables
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,3,File Handling
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,2,Functions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,1,Control Flow
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,1,Object-Oriented Programming
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,3,Exception Handling
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of control flow in Python?,Determines the execution path of code using conditionals like if-else statements.,3,Control Flow
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,1,Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
-What is the primary function of loops in Python?,Executes a block of code multiple times using for and while loops.,1,Loops
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",1,Operators
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",2,Data Types
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,3,List Comprehensions
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,3,Modules and Packages
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",1,Built-in Functions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,2,Scope and Namespaces
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",1,Data Structures
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,1,Modules and Packages
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,1,List Comprehensions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,1,Scope and Namespaces
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of functions in Python?,Encapsulates reusable blocks of code to perform specific tasks.,3,Functions
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",2,Lambda Functions
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",3,Data Types
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,2,File Handling
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of file handling in Python?,Reads from and writes to files using built-in functions like open() and close().,1,File Handling
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of data types in Python?,"Defines the type of values a variable can hold, such as int, float, and string.",1,Data Types
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of built-in functions in Python?,"Provides predefined functions like print(), len(), and type() for various tasks.",2,Built-in Functions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",2,Data Structures
-What is the primary function of exception handling in Python?,Manages runtime errors using try-except blocks to prevent crashes.,1,Exception Handling
-What is the primary function of lambda functions in Python?,"Creates small, anonymous functions using the lambda keyword.",3,Lambda Functions
-What is the primary function of data structures in Python?,"Includes lists, tuples, dictionaries, and sets for efficient data storage and manipulation.",3,Data Structures
-What is the primary function of object-oriented programming in Python?,Uses classes and objects to implement principles like encapsulation and inheritance.,2,Object-Oriented Programming
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of list comprehensions in Python?,Offers a concise way to create lists using a single line of code.,2,List Comprehensions
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",2,Operators
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of modules and packages in Python?,Organizes code into reusable modules and packages to enhance maintainability.,2,Modules and Packages
-What is the primary function of operators in Python?,"Performs operations on variables and values, such as arithmetic and logical operations.",3,Operators
-What is the primary function of scope and namespaces in Python?,Determines the visibility and lifetime of variables in different parts of a program.,3,Scope and Namespaces
+Can a lambda function have multiple expressions?,"No, it can have only one expression.",2,Lambda Functions
+What is an infinite loop?,A loop that never ends unless externally interrupted.,3,Control Flow
+What is a recursive function?,A function that calls itself.,3,Functions
+Can you return a lambda function from another function?,"Yes, functions can return lambda expressions.",3,Lambda Functions
+How do you use a lambda function with filter()?,"filter(lambda x: x > 0, iterable)",2,Lambda Functions
+What is an object in Python?,An instance of a class.,1,Object-Oriented Programming
+How do you import only specific functions from a module?,Using from module import function.,2,Modules and Packages
+What does the len() function do?,Returns the number of items in an object.,1,Built-in Functions
+What is the benefit of using packages?,They help organize code and avoid naming conflicts.,3,Modules and Packages
+What does the 'global' keyword do?,It declares that a variable inside a function is global.,2,Scope and Namespaces
+What is a function in Python?,A block of code that performs a specific task and can be reused.,1,Functions
+What does the 'else' statement do?,Executes a block of code if the 'if' condition is false.,1,Control Flow
+What is method overriding in Python?,Redefining a method in a subclass that exists in the parent class.,3,Object-Oriented Programming
+What is variable shadowing in Python?,When a local variable has the same name as a global variable.,3,Variables
+Can you nest control flow statements in Python?,"Yes, control flow statements can be nested inside each other.",3,Control Flow
+Can you use nested loops in a list comprehension?,"Yes, list comprehensions can have nested loops.",3,List Comprehensions
+What is the base class for all exceptions in Python?,BaseException,3,Exception Handling
+What is a lambda function in Python?,An anonymous function defined with the lambda keyword.,1,Lambda Functions
+Are list comprehensions more efficient than for loops?,"Yes, they are generally more concise and faster.",2,List Comprehensions
+What block is executed if an error occurs in try block?,except,1,Exception Handling
+What is Object-Oriented Programming (OOP)?,A programming paradigm based on the concept of objects.,1,Object-Oriented Programming
+Can sets contain duplicate values?,"No, sets only store unique values.",1,Data Structures
+What is the difference between a tuple and a list?,"Tuples are immutable, lists are mutable.",2,Data Types
+How do you iterate through a dictionary?,"Using for key, value in dict.items().",2,Data Structures
+What is the difference between a set and a dictionary?,Sets store values; dictionaries store key-value pairs.,3,Data Structures
+What does the sorted() function do?,Returns a new sorted list from the items of any iterable.,2,Built-in Functions
+How do you define a function in Python?,Using the 'def' keyword.,1,Functions
+What are comparison operators used for?,To compare two values and return a Boolean result.,1,Operators
+Which method is used to write data to a file?,The write() method.,2,File Handling
+What keyword is used to define a class in Python?,The 'class' keyword.,1,Object-Oriented Programming
+How do you check the data type of a variable?,Using the type() function.,1,Data Types
+What does the 'break' statement do inside a loop?,It exits the loop immediately.,2,Control Flow
+What is the standard library in Python?,A collection of modules and packages included with Python.,2,Modules and Packages
+What keyword is used for conditional branching in Python?,The 'if' keyword.,1,Control Flow
+How do you read the entire contents of a file at once?,Using the read() method.,1,File Handling
+What does the '//' operator do?,Performs floor division and returns the largest whole number.,2,Operators
+"What is the result of [x.upper() for x in ['a', 'b', 'c']]?","['A', 'B', 'C']",1,List Comprehensions
+What is a dictionary in Python?,An unordered collection of key-value pairs.,2,Data Types
+What is the scope of a variable declared inside a function?,It is local to that function.,2,Variables
+How do you create an object from a class?,By calling the class name followed by parentheses.,1,Object-Oriented Programming
+How do you create a set in Python?,Using curly braces or the set() function.,1,Data Structures
+What is the LEGB rule in Python?,"It defines the lookup order: Local, Enclosing, Global, Built-in.",2,Scope and Namespaces
+Can you access a variable outside its scope?,"No, accessing a variable outside its scope raises a NameError.",2,Scope and Namespaces
+What does the 'continue' statement do?,Skips the current iteration and moves to the next one.,2,Control Flow
+What is the purpose of control flow in Python?,To manage the order in which code is executed.,1,Control Flow
+What are the four types of variable scope in Python?,"Local, Enclosing, Global, and Built-in (LEGB).",2,Scope and Namespaces
+What does the 'finally' block do?,"Executes code no matter what, even if an error occurs.",2,Exception Handling
+How do you get the maximum value from a list?,Using the max() function.,1,Built-in Functions
+How do you use a lambda function with map()?,"map(lambda x: x*2, iterable)",2,Lambda Functions
+What is the precedence of operators in Python?,It determines the order in which operations are evaluated.,3,Operators
+How can you loop through both index and value in a list?,Using enumerate().,2,Loops
+What is the output of True and False?,FALSE,1,Operators
+How do you alias a module while importing?,Using import module as alias.,2,Modules and Packages
+What is a variable in Python?,A variable is a name that refers to a value.,1,Variables
+What does the type() function return?,Returns the type of an object.,1,Built-in Functions
+How do you list all functions and variables in a module?,Using the dir() function.,3,Modules and Packages
+Can Python variables change type after assignment?,"Yes, Python is dynamically typed.",3,Data Types
+What does the 'r' mode do when opening a file?,Opens the file for reading.,1,File Handling
+How do you ensure a file is properly closed after use?,Use a with statement (context manager).,2,File Handling
+How do you import a module in Python?,Using the import statement.,1,Modules and Packages
+How do you access a value in a dictionary?,Using the corresponding key.,1,Data Structures
+What is the result of type(3.14)?,float.,2,Data Types
+What type of data is a list in Python?,list - a mutable sequence type.,2,Data Types
+What data type is used for true/false values?,bool.,1,Data Types
+What does the 'continue' statement do in a loop?,Skips the current iteration and moves to the next.,2,Loops
+Which function is used to open a file in Python?,The open() function.,1,File Handling
+What is an infinite loop?,A loop that runs forever unless explicitly stopped.,2,Loops
+Is it possible to catch all exceptions with one block?,"Yes, by using except Exception as e.",3,Exception Handling
+What happens if you try to open a non-existent file in 'r' mode?,A FileNotFoundError is raised.,3,File Handling
+Can loops be nested in Python?,"Yes, one loop can be placed inside another.",2,Loops
+What is the purpose of the return statement in a function?,It sends a result back to the caller.,1,Functions
+What is the purpose of the init method in Python?,To initialize an objectÕs attributes.,2,Object-Oriented Programming
+How do you iterate over a dictionary in a loop?,"Using for key, value in dict.items().",3,Loops
+What is the purpose of the isinstance() function?,Checks if an object is an instance of a class or a tuple of classes.,2,Built-in Functions
+What is a package in Python?,A directory containing an init.py file and modules.,2,Modules and Packages
+What happens if a local variable has the same name as a global variable?,The local variable shadows the global one in its scope.,2,Scope and Namespaces
+What are the built-in data structures in Python?,"List, Tuple, Set, Dictionary",1,Data Structures
+Can list comprehensions include conditions?,"Yes, using an 'if' clause.",2,List Comprehensions
+What does the 'global' keyword do in Python?,It allows a variable to be used globally across functions.,2,Variables
+What does the map() function do?,Applies a function to all items in an iterable.,3,Built-in Functions
+What does the 'else' block do in exception handling?,Executes if no exceptions are raised in the try block.,3,Exception Handling
+What is list comprehension in Python?,A concise way to create lists using a single line of code.,1,List Comprehensions
+What does 'self' refer to in a class method?,The instance calling the method.,2,Object-Oriented Programming
+What is a namespace in Python?,A container that maps names to objects.,1,Scope and Namespaces
+Can lambda functions be used inside other functions?,"Yes, they can be defined and used locally.",3,Lambda Functions
+What is inheritance in Python?,A mechanism to create a new class from an existing class.,2,Object-Oriented Programming
+What is a parameter in a function?,A variable listed inside the parentheses in the function definition.,2,Functions
+What is a constant variable in Python?,"A variable that is meant to stay unchanged, usually written in uppercase.",3,Variables
+What does the 'a' mode do when opening a file?,Opens the file for appending content at the end.,2,File Handling
+What is the syntax of a lambda function?,lambda arguments: expression,1,Lambda Functions
+What is the use of the 'else' block in a loop?,It runs if the loop is not terminated by a break.,3,Loops
+How can you access a global variable inside a function?,By declaring it with the 'global' keyword.,2,Scope and Namespaces
+Can you handle multiple exceptions in one block?,"Yes, using multiple except blocks or a tuple of exceptions.",2,Exception Handling
+What exception is raised when a file is not found?,FileNotFoundError,2,Exception Handling
+What are the two main types of loops in Python?,for loop and while loop.,1,Loops
+Can variable names contain special characters like @ or #?,"No, only letters, numbers, and underscores are allowed.",3,Variables
+What is the role of the 'elif' keyword?,Checks another condition if the previous 'if' was false.,2,Control Flow
+What is the difference between a parameter and an argument?,A parameter is in the function definition; an argument is the value passed.,3,Functions
+What is a nested list?,A list that contains other lists as elements.,2,Data Structures
+How can you check the type of a variable?,Using the type() function.,1,Variables
+How does a 'while' loop work?,It runs as long as a condition is true.,2,Control Flow
+What is polymorphism in Python OOP?,The ability to use a common interface for different data types.,3,Object-Oriented Programming
+How is a lambda function different from a def function?,Lambda is anonymous and can only contain a single expression.,2,Lambda Functions
+How do you raise a custom exception?,Using the raise statement.,2,Exception Handling
+What happens if you try to use a variable before assigning it?,It raises a NameError.,2,Variables
+How do you call a function in Python?,By writing the function name followed by parentheses.,1,Functions
+What is the result of 2 ** 3 in Python?,8,1,Operators
+Can a variable name start with a number in Python?,"No, variable names cannot start with a number.",1,Variables
+What is the purpose of init.py file?,It marks a directory as a Python package.,2,Modules and Packages
+What does [x for x in range(10) if x % 2 == 0] produce?,A list of even numbers from 0 to 9.,2,List Comprehensions
+How do you remove duplicates from a list?,Convert it to a set.,2,Data Structures
+Which symbols are used to define a list comprehension?,Square brackets [].,1,List Comprehensions
+What is an argument in a function call?,A value passed to a function when calling it.,2,Functions
+How can you read a file line by line?,Using a for loop on the file object.,2,File Handling
+Can a function return multiple values?,"Yes, by returning them as a tuple.",2,Functions
+Can you create your own modules in Python?,"Yes, by writing Python code in a .py file.",1,Modules and Packages
+How does the zip() function work?,Aggregates elements from two or more iterables into tuples.,2,Built-in Functions
+What is scope in Python?,The region of a program where a variable is accessible.,1,Scope and Namespaces
+What is a module in Python?,A file containing Python definitions and statements.,1,Modules and Packages
+What does a 'while' loop do in Python?,Repeats as long as a condition is true.,1,Loops
+What does the 'w' mode do when opening a file?,Opens the file for writing and overwrites existing content.,1,File Handling
+What happens if the expression in a list comprehension causes an error?,The comprehension raises an exception at runtime.,3,List Comprehensions
+What does a 'for' loop do in Python?,Iterates over items of a sequence like a list or string.,1,Loops
+How do you check if a file exists before opening it?,Use os.path.exists() function.,3,File Handling
+What is the built-in namespace in Python?,It contains built-in functions and exceptions available everywhere.,3,Scope and Namespaces
+What does the 'in' operator do?,Checks if a value exists in a sequence.,2,Operators
+What is the difference between a list and a tuple?,"Lists are mutable, tuples are immutable.",2,Data Structures
+What is the type of value returned by the input() function?,str (string).,1,Data Types
+How would you flatten a 2D list using list comprehension?,[item for sublist in lst for item in sublist],3,List Comprehensions
+What does the input() function do?,Takes input from the user as a string.,1,Built-in Functions
+What is exception handling in Python?,A way to handle errors gracefully without crashing the program.,1,Exception Handling
+What is encapsulation in OOP?,Hiding internal object details and showing only necessary parts.,3,Object-Oriented Programming
+What is a built-in function in Python?,A function that is always available in Python without importing any module.,1,Built-in Functions
+How do you assign a value to a variable in Python?,"Using the equals sign (=), e.g., x = 10.",1,Variables
+How would you create a list of squares from 0 to 9 using list comprehension?,[x**2 for x in range(10)],2,List Comprehensions
+What keyword is used to handle exceptions?,try,1,Exception Handling
+What are logical operators in Python?,"and, or, not",1,Operators
+What are arithmetic operators in Python?,"+, -, *, /, %, //, **",1,Operators
+What is a default parameter in Python functions?,A parameter that assumes a default value if not provided.,2,Functions
+What does the 'nonlocal' keyword do?,It refers to a variable in the nearest enclosing scope.,3,Scope and Namespaces
+How do you assign a lambda function to a variable?,"By using assignment, e.g., f = lambda x: x + 1",2,Lambda Functions
+What is the primary use of a dictionary in Python?,To store key-value pairs.,1,Data Structures
+How do you find the ASCII value of a character in Python?,Using the ord() function.,3,Built-in Functions
+What are the basic data types in Python?,"int, float, str, bool, and NoneType.",1,Data Types
+"What is the output of lambda x, y: x + y when called with 2 and 3?",5 [ Five ],1,Lambda Functions
+What is the difference between '=' and '=='?,"'=' assigns a value, '==' compares two values.",2,Operators
+What type of loop is used to iterate over a sequence?,The 'for' loop.,1,Control Flow
+What keyword is used to exit a loop prematurely?,break,1,Loops
+What does the '==' operator check?,Checks if two values are equal.,1,Operators
