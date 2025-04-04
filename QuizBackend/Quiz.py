@@ -10,8 +10,6 @@ import json
 from stable_baselines3 import DQN
 from werkzeug.security import check_password_hash
 from werkzeug.security import generate_password_hash
-
-
 # Load environment variables
 load_dotenv()
 
@@ -168,7 +166,7 @@ def leaderboard():
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # ✅ LEFT JOIN to include users with no quiz data
+    # ✅ Return the best scoring attempt per user
     cursor.execute("""
         SELECT 
             u.user_id,
@@ -179,8 +177,16 @@ def leaderboard():
             q.knowledge_level,
             q.weakareas
         FROM users u
-        LEFT JOIN Quiz q ON u.user_id = q.user_id
-        ORDER BY u.user_id, q.attempt_id
+        LEFT JOIN (
+            SELECT *
+            FROM Quiz q1
+            WHERE (user_id, score) IN (
+                SELECT user_id, MAX(score)
+                FROM Quiz
+                GROUP BY user_id
+            )
+        ) q ON u.user_id = q.user_id
+        ORDER BY q.score DESC;
     """)
 
     data = cursor.fetchall()
@@ -192,37 +198,37 @@ def leaderboard():
         "leaderboard": data
     })
 
-# @app.route("/api/clear_all_data", methods=["POST"])
-# def clear_all_data():
-#     try:
-#         conn = get_db_connection()
-#         cursor = conn.cursor()
 
-#         # Delete all quiz-related data first (respect FK constraints)
-#         cursor.execute("DELETE FROM VideoTrack")
-#         cursor.execute("DELETE FROM Question")
-#         cursor.execute("DELETE FROM Quiz")
+@app.route("/api/clear_all_data", methods=["POST"])
+def clear_all_data():
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
 
-#         # Optional: Delete from VideoResources
-#         # cursor.execute("DELETE FROM VideoResources")
+        # Delete all quiz-related data first (respect FK constraints)
+        cursor.execute("DELETE FROM VideoTrack")
+        cursor.execute("DELETE FROM Question")
+        cursor.execute("DELETE FROM Quiz")
 
-#         # Delete users (last, due to FK)
-#         cursor.execute("DELETE FROM users")
+        # Optional: Delete from VideoResources
+        # cursor.execute("DELETE FROM VideoResources")
 
-#         conn.commit()
-#         conn.close()
+        # Delete users (last, due to FK)
+        cursor.execute("DELETE FROM users")
 
-#         return jsonify({
-#             "status": "success",
-#             "message": "All database records have been cleared."
-#         })
+        conn.commit()
+        conn.close()
 
-#     except Exception as e:
-#         return jsonify({
-#             "status": "error",
-#             "message": f"Failed to clear data: {str(e)}"
-#         }), 500
+        return jsonify({
+            "status": "success",
+            "message": "All database records have been cleared."
+        })
 
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": f"Failed to clear data: {str(e)}"
+        }), 500
 
 # Next question
 @app.route("/api/next_question", methods=["GET"])
@@ -268,6 +274,11 @@ def next_question():
 # Submit answer
 @app.route("/api/submit_answer", methods=["POST"])
 def submit_answer():
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
+
     data = request.json
     user_answer = data.get("answer")
 
@@ -341,6 +352,11 @@ def quiz_results():
 def reset_data():
     global model
 
+    try:
+        user_id = get_logged_in_user_id()
+    except PermissionError as e:
+        return jsonify({"error": str(e)}), 401
+
     model_path = "QuizBackend/data/quiz_model.zip"
     model = DQN.load(model_path) if os.path.exists(model_path) else None
 
@@ -348,15 +364,16 @@ def reset_data():
         conn = get_db_connection()
         cursor = conn.cursor()
 
-        # ❗ Delete all tracking and quiz-related data
-        cursor.execute("DELETE FROM VideoTrack")
-        cursor.execute("DELETE FROM Question")
-        cursor.execute("DELETE FROM Quiz")
+        # 🧹 Only delete this user's data
+        cursor.execute("DELETE FROM VideoTrack WHERE user_id = %s", (user_id,))
+        cursor.execute("DELETE FROM Question WHERE quiz_id IN (SELECT quiz_id FROM Quiz WHERE user_id = %s)", (user_id,))
+        cursor.execute("DELETE FROM Quiz WHERE user_id = %s", (user_id,))
+        
         conn.commit()
         conn.close()
 
         return jsonify({
-            "message": "Database cleaned and model reset.",
+            "message": "Your quiz data and model session have been reset.",
             "model_status": "Model reset successfully." if model else "Model file not found. Reset failed."
         })
 
@@ -453,7 +470,6 @@ def weak_areas():
     })
 
 
-# Endpoint to retrieve quiz questions with fake answers
 @app.route("/api/get_quiz_questions_re", methods=["GET"])
 def get_quiz_questions():
     try:
@@ -464,28 +480,32 @@ def get_quiz_questions():
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
+    # 🔍 Step 1: Get latest attempt_id for this user
+    cursor.execute("SELECT MAX(attempt_id) AS latest FROM Quiz WHERE user_id = %s", (user_id,))
+    latest_attempt = cursor.fetchone()["latest"]
+
+    if not latest_attempt:
+        conn.close()
+        return jsonify({"error": "No attempts found for user!"}), 404
+
+    # 🔍 Step 2: Get all incorrect questions from latest attempt
     cursor.execute("""
-        SELECT description, correct_answer, attempt_id, weakarea, COUNT(*) AS attempt_count 
+        SELECT description, correct_answer, weakarea, COUNT(*) AS attempt_count 
         FROM Question 
         WHERE is_correct = 0 AND quiz_id IN (
-            SELECT quiz_id FROM Quiz WHERE user_id = %s
+            SELECT quiz_id FROM Quiz WHERE user_id = %s AND attempt_id = %s
         )
-        GROUP BY description, correct_answer, weakarea, attempt_id
-        HAVING attempt_id = (
-            SELECT MAX(q2.attempt_id)
-            FROM Question q2
-            WHERE q2.description = Question.description
-              AND q2.correct_answer = Question.correct_answer
-        )
+        GROUP BY description, correct_answer, weakarea
         ORDER BY attempt_count DESC
         LIMIT 10;
-    """, (user_id,))
+    """, (user_id, latest_attempt))
     questions = cursor.fetchall()
     conn.close()
 
     if not questions:
-        return jsonify({"error": "No questions found!"}), 404
+        return jsonify({"error": "No incorrect questions found for latest attempt!"}), 404
 
+    # 🔄 Step 3: Build fake answers
     result = []
     for question in questions:
         correct_answer = question["correct_answer"]
@@ -505,6 +525,7 @@ def get_quiz_questions():
         "status": "success",
         "questions_with_fake_answers": result
     })
+
 
 
 @app.route("/api/submit_quiz_re", methods=["POST"])
@@ -766,8 +787,6 @@ def video_history():
         })
 
     return jsonify({"user_id": user_id, "video_history": history})
-
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5001, debug=True)
